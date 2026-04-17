@@ -1,6 +1,9 @@
+import com.example.todocompose.domain.TodoRepository
 
-class DeleteTodoUseCase {
+class DeleteTodoUseCase(
+    private val repository: TodoRepository
+) {
     operator fun invoke(toDoId: Int) {
-        TODO()
+        repository.deleteTodo(toDoId)
     }
 }

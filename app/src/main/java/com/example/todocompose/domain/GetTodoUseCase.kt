@@ -1,7 +1,9 @@
 package com.example.todocompose.domain
 
-class GetTodoUseCase {
+class GetTodoUseCase(
+    private val repository: TodoRepository
+) {
     operator fun invoke(todoId: Int) {
-        TODO()
+        return repository.getTodo(todoId)
     }
 }
