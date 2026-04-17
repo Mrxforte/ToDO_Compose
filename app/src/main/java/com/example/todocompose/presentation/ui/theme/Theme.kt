@@ -1,4 +1,4 @@
-package com.example.todocompose.ui.theme
+package com.example.todocompose.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
