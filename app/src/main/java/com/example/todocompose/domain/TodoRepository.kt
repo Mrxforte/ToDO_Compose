@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface TodoRepository {
 
-    var allToDos: Flow<List<ToDo>> = TODO("initialize me")
+    var allToDos: Flow<List<ToDo>>
 
     fun addTodo(toDo: ToDo)
     fun deleteTodo(todoId: Int)
